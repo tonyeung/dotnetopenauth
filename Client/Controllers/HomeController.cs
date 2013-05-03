@@ -20,8 +20,8 @@ namespace Client.Controllers
         {
             var authServerDescription = new AuthorizationServerDescription
             {
-                TokenEndpoint = new Uri("http://localhost:38828/OAuth/Token"),
-                AuthorizationEndpoint = new Uri("http://localhost:38828/OAuth/Authorize")
+                TokenEndpoint = new Uri("http://localhost:2396/OAuth/Token"),
+                AuthorizationEndpoint = new Uri("http://localhost:2396/OAuth/Authorize")
             };
             var Client = new WebServerClient(authServerDescription, "sampleconsumer", "samplesecret");
 
