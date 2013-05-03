@@ -1,0 +1,4 @@
+dotnetopenauth
+==============
+
+sample openauth library
