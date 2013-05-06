@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Server.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,6 +15,9 @@ namespace Server
 
     public class WebApiApplication : System.Web.HttpApplication
     {
+        public static CryptoKeyStore KeyStore { get; set; }
+        public static NonceStore NonceStore { get; set; }
+
         protected void Application_Start()
         {
             log4net.Config.XmlConfigurator.Configure();
